@@ -116,6 +116,8 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
     rdoc (4.2.0)
+    rvm-capistrano (1.4.1)
+      capistrano (>= 2.0.0)
     sass (3.4.19)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -160,6 +162,7 @@ DEPENDENCIES
   jquery-rails
   mysql2 (~> 0.3.18)
   rails (= 4.2.1)
+  rvm-capistrano
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring

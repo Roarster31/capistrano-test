@@ -44,5 +44,8 @@ group :development, :test do
 
   # For deployment
   gem 'capistrano', '~> 2.0'
+
+  gem 'rvm-capistrano'
 end
 
+gem 'rvm-capistrano'
