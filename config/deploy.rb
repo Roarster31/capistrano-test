@@ -4,6 +4,15 @@ set :repository,  "git@github.com:Roarster31/capistrano-test.git"
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
+# adjust if you are using RVM, remove if you are not
+set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"")
+set :bundle_without, [:development]
+require "rvm/capistrano"
+require "bundler/capistrano"
+load 'deploy/assets'
+
+set :rvm_type, :user
+
 set :deploy_to, "/var/www/html/capistrano-test"
 set :scm, :git
 set :branch, "master"

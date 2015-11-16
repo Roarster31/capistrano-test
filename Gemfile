@@ -47,5 +47,3 @@ group :development, :test do
 
   gem 'rvm-capistrano'
 end
-
-gem 'rvm-capistrano'
