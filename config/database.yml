@@ -15,7 +15,7 @@ default: &default
   pool: 5
   username: todouser
   password: password
-  socket: /tmp/mysql.sock
+  socket: <%= ENV['DATABASE_SOCKET'] %>
 
 development:
   <<: *default
